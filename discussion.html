@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+
+
+  </head>
+  <body>
+    <nav class = "navbar">
+      <ul>
+         <li><a href="index.html" class = "active">Home</a></li>
+         
+     <!--   <li><a href="gallery.html"> Gallery</a></li>-->
+              
+        <div class="dropdown">
+              <button class="dropbtn">Get Involved
+                <i class="fa fa-caret-down"></i>
+              </button>
+              <div class="dropdown-content">
+                <li>   <a href="discussion.html">Discussion Board</a></li>
+                  <li> <a href="events.html"> Events</a></li> 
+              
+              </div>
+            </div>
+            <li>  <a href="contact.html">Contact Us</a></li>
+             <!--<li> <a href="sign-up.html"> Sign-up</a></li>--> 
+
+      </ul>
+                 
+
+          </div>
+    </nav>
+    <h1 class = "title"> Discussion Board</h1>
+      <main class = "grid-container">
+         <section class= "BoardPost">
+          <h3>Education and Career Aspirations:</h3>
+          <p> Explore different career paths, emphasize the importance of education, and discuss ways to pursue one's passion while overcoming obstacles.</p>
+          <p></p>
+      <label for = "userAnswer1"> Post here</label>
+      <input  type="text" name = "board1" id="userAnswer1" />
+      <button onclick = "returnText(1)"> Post</button>
+      <button type="button" class="collapsible">View Coments</button>
+      <div class="content" id = "content1">
+          <p></p  >
+        
+
+      </div>
+   
+</section>
+<section class = "BoardPost">
+  <h2>Leadership and Empowerment: </h2>
+  <p>Encourage girls to take on leadership roles, embrace their strengths, and support one another in achieving their goals.</a></p>
+  <label for = "userAnswer2"> Post here</label>
+  <input  type="text" name = "board2" id="userAnswer2" />
+  <button onclick = "returnText(2)"> Post</button>
+      <button type="button" class="collapsible">View Coments</button>
+      <div class="content" id = "content2">
+    
+        <p></p>
+        
+
+      </div>
+ 
+
+</section>
+
+<section class = "BoardPost">
+  <h2>Community Involvement: </h2>
+    <p>Discuss the importance of giving back to the community, volunteering, and making a positive impact on the world around them..</p>
+    <label for = "userAnswer3"> Post here</label>
+    <input  type="text" name = "board3" id="userAnswer3" />
+    <button onclick = "returnText(3)"> Post</button>
+  
+    <button type="button" class="collapsible">View Coments</button>
+    <div class="content" id = "content3">
+  
+    </div>
+  </section>
+</main>
+<button type="button"><a href="sign-up.html">GET INVOLVED</a></button>
+  </div>
+  <script src="script.js"></script>
+ 
+  </body>
+</html>

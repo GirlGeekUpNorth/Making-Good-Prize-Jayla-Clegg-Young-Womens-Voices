@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <nav class = "navbar">
+      <ul>
+         <li><a href="index.html" class = "active">Home</a></li>
+         
+         <li><a href="gallery.html"> Gallery</a></li>
+          
+              
+        <div class="dropdown">
+              <button class="dropbtn">Get Involved
+                <i class="fa fa-caret-down"></i>
+              </button>
+              <div class="dropdown-content">
+                <li>   <a href="discussion.html">Discussion Board</a></li>
+                  <li> <a href="events.html"> Events</a></li> 
+              
+              </div>
+            </div>
+            <li>  <a href="contact.html">Contact Us</a></li>
+              <li> <a href="sign-up.html"> Sign-up</a></li>
+
+      </ul>
+                 
+
+          </div>
+    </nav>
+    <section class="log-in-section">
+        <h2>LOG IN</h2>
+        <form>
+            <fieldset>
+                <label for="email">Email: <input id="email" name="email" type="email" required /></label>
+                <label for="password">Password: <input id="new-password" name="new-password" type="password" pattern="[a-z0-5]{8,}" required /></label>
+            </fieldset>
+        </form>
+    </section>
+    <section class="sign-up-section">
+        <h2>CREATE AN ACCOUNT</h2>
+        <form method="post">
+            <fieldset>
+                <label for="first-name">First Name: <input id="first-name" name="first-name" type="text" required /></label>
+                <label for="last-name">Last Name: <input id="last-name" name="last-name" type="text" required /></label>
+                <label for="email">Email: <input id="email" name="email" type="email" required /></label>
+                <label for="new-password">Create a password: <input id="new-password" name="new-password" type="password" pattern="[a-z0-5]{8,}" required /></label>
+                <input class="terms-and-conditions" type="checkbox" required name="terms-and-conditions" class="inline" /> I accept the <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">terms and conditions</a></label>
+                <input class="terms-and-conditions" type="checkbox" required name="terms-and-conditions" class="inline" /> I agree that Us Girls may contact me to verify my identity, in order to ensure our group remains a safe space</label>
+            </fieldset>
+        </form>
+    </section>
+    <section class="mailing-list">
+        <h2>STAY UP TO DATE</h2>
+        <form method="post">
+            <fieldset>
+                <label for="first-name">First Name: <input id="first-name" name="first-name" type="text" required /></label>
+                <label for="last-name">Last Name: <input id="last-name" name="last-name" type="text" required /></label>
+                <label for="email">Email: <input id="email" name="email" type="email" required /></label>
+                <input class="terms-and-conditions" type="checkbox" required name="terms-and-conditions" class="inline" /> I agree to receive emails from Us Girls and am aware I can <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">unsubscribe</a> at any time</label>
+            </fieldset>
+        </form>
+    </section>
+  </body>
+</html>

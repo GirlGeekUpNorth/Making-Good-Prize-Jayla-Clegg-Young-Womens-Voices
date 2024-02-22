@@ -1,0 +1,321 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #eccde4;
+    font-size: 16px; 
+  }
+ 
+  .navbar > ul {
+    background-color: #6c0a879a;
+    overflow:hidden;
+    list-style-type: none;
+}
+  
+  .navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+ 
+
+  .dropdown {
+    float: left;
+    overflow: hidden;
+  }
+  
+  .dropdown .dropbtn {
+    font-size: 16px;  
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+  }
+  
+  .navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: rgb(255, 0, 217);
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color:  #6c0a879a;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    float: none;
+    color: rgb(255, 255, 255);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: rgb(255, 0, 217);
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+ .title{
+  -webkit-text-stroke-width: 1.5px;
+  -webkit-text-stroke-color: black;
+  font-size: 40px;
+  color: aliceblue;
+  margin: auto;
+  text-align: center;
+padding-bottom: 5%;
+
+ }
+
+
+.grid-container {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+.titlePage{
+  border-style: solid;
+  grid-column: 2 / span 10;
+ background-color: #e4c5e5;
+ border-width: 1px;
+margin-left: 15%;
+margin-right: 15%;
+padding: 1% 10%;
+margin-bottom: 1%;
+}
+.aboutUsTitle{
+  border-style: solid;
+  grid-column: 2 / span 10;
+ background-color: #e4c5e5;
+ border-width: 1px;
+margin-left: 15%;
+margin-right: 15%;
+padding: 1% 10%;
+margin-bottom: 1%;
+}
+.whatWeDo{
+  border-style: solid;
+  grid-column: 2 / span 10;
+ background-color: #e4c5e5;
+ border-width: 1px;
+margin-left: 15%;
+margin-right: 15%;
+padding: 1% 10%;
+margin-bottom: 1%;
+}
+
+.BoardPost{
+  grid-column: 2 / span 10;
+  border-style: solid;
+ 
+ background-color: #e4c5e5;
+ border-width: 1px;
+margin-left: 15%;
+margin-right: 15%;
+padding: 1% 10%;
+margin-bottom: 1%;
+
+}
+
+ .subforum{
+     margin-top: 20px;
+ }
+ .subforum-title{
+     background-color:black;
+ padding: 5px;
+ border-radius: 5px;
+ margin: 4px;
+ }
+ 
+
+ .subforum-row{
+ display: grid;
+ grid-template-columns: 7% 60% 13% 20%;
+ 
+ }
+ .subforum-collumn{
+     padding: 10px;
+     margin: 4px;
+     border-radius: 5px;
+ 
+ }
+ .center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+
+ .collapsible {
+  background: none;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+
+}
+.content {
+
+  display: none;
+  overflow: hidden;
+  background-color: #ede4ed;
+  border: 1px solid #d29bd4;
+   padding: 1% 10%;
+ margin-bottom: 1%;
+}
+
+
+.popup {
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: none;
+}
+.popup-content {
+  background-color: #e4c5e5;;
+  margin: 10% auto;
+  padding: 20px;
+  border: 1px solid #d29bd4;;
+  width: 30%;
+  font-weight: bolder;
+}
+.popup-content button {
+  display: block;
+  margin: 0 auto;
+}
+.show {
+  display: block;
+}
+
+
+.social-icons  img{
+  max-width:30%;
+  height: auto;
+}
+.follow-us{
+  border-style: solid;
+  grid-column: 5 / span 4;
+ background-color: #e4c5e5;
+ border-width: 1px;
+margin-left: 15%;
+margin-right: 15%;
+padding: 1% 10%;
+margin-bottom: 1%;
+}
+.contact-info{
+  border-style: solid;
+  grid-column: 1 / span 4;
+ background-color: #e4c5e5;
+ border-width: 1px;
+margin-left: 15%;
+margin-right: 15%;
+padding: 1% 10%;
+margin-bottom: 1%;
+}
+.mailing-list{
+  border-style: solid;
+  grid-column: 9 / span 4;
+ background-color: #e4c5e5;
+ border-width: 1px;
+margin-left: 15%;
+margin-right: 15%;
+padding: 1% 10%;
+margin-bottom: 1%;
+}
+
+@media only screen and (max-width: 600px) {
+  .grid-container {
+      display: grid;
+      gap: 10px;
+      grid-template-columns: 1fr;
+  }
+
+.titlePage{
+  border-style: solid;
+  grid-column: 1 / span 1;
+ background-color: #e4c5e5;
+ border-width: 1px;
+margin-left: 1%;
+margin-right: 1%;
+padding: 1% 5%;
+margin-bottom: 1%;
+}
+.aboutUsTitle{
+  border-style: solid;
+  grid-column: 1 / span 1;
+ background-color: #e4c5e5;
+ border-width: 1px;
+margin-left: 1%;
+margin-right: 1%;
+padding: 1% 5%;
+margin-bottom: 1%;
+}
+.whatWeDo{
+  border-style: solid;
+  grid-column: 1 / span 1;
+ background-color: #e4c5e5;
+ border-width: 1px;
+margin-left: 1%;
+margin-right: 1%;
+padding: 1% 5%;
+margin-bottom: 1%;
+}
+.BoardPost{
+  border-style: solid;
+  grid-column: 1 / span 1;
+ background-color: #e4c5e5;
+ border-width: 1px;
+margin-left: 1%;
+margin-right: 1%;
+padding: 1% 5%;
+margin-bottom: 1%;
+}
+.follow-us{
+  border-style: solid;
+  grid-column: 1 / span 1;
+ background-color: #e4c5e5;
+ border-width: 1px;
+margin-left: 1%;
+margin-right: 1%;
+padding: 1% 5%;
+margin-bottom: 1%;
+}
+.contact-info{
+  border-style: solid;
+  grid-column: 1 / span 1;
+ background-color: #e4c5e5;
+ border-width: 1px;
+margin-left: 1%;
+margin-right: 1%;
+padding: 1% 5%;
+margin-bottom: 1%;
+}
+.mailing-list{
+  border-style: solid;
+  grid-column: 1 / span 1;
+ background-color: #e4c5e5;
+ border-width: 1px;
+margin-left: 1%;
+margin-right: 1%;
+padding: 1% 5%;
+margin-bottom: 1%;
+}
+}

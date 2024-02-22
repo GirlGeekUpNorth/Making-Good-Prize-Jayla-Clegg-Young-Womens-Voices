@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <nav class = "navbar">
+      <ul>
+         <li><a href="index.html" class = "active">Home</a></li>
+         
+         <!--   <li><a href="gallery.html"> Gallery</a></li>-->
+          
+              
+        <div class="dropdown">
+              <button class="dropbtn">Get Involved
+                <i class="fa fa-caret-down"></i>
+              </button>
+              <div class="dropdown-content">
+                <li>   <a href="discussion.html">Discussion Board</a></li>
+                  <li> <a href="events.html"> Events</a></li> 
+              
+              </div>
+            </div>
+            <li>  <a href="contact.html">Contact Us</a></li>
+              <!--<li> <a href="sign-up.html"> Sign-up</a></li>--> 
+
+      </ul>
+                 
+
+          </div>
+    </nav>
+
+    <h1 class = "title"> Upcoming Events</h1>
+   
+      <div class = "grid-container">
+      <section class= "BoardPost">
+    <h3> Book Club: 30/01/2024</h3>
+    <p>Come along discuss any book you have been reading, fiction and non-fiction are welcome.
+Invite authors or local writers to join discussions and share insights.</p>
+    <p> </p>
+  <p></p>
+  <button id="myButton" onclick="popup()">
+    Sign Up for the event
+    </button>
+
+
+</section>
+<section class= "BoardPost">
+  <h3> Creative Arts and Expression 02/02/2024 </h3>
+  <p>Workshops in various artistic endeavors, such as painting, writing, music, and drama.
+    Allow participants to express themselves creatively and build a supportive community.</p>
+<p></p>
+<button id="myButton" onclick="popup()">
+  Sign Up for the event
+  </button>
+
+</section>
+<section class= "BoardPost">
+  <h3> Girls' Leadership Workshop:</h3>
+  <p>Focus on building leadership skills, teamwork, and self-confidence through interactive activities and discussions.
+    Invite inspiring female leaders from various fields to share their experiences and insights.</p>
+<p></p>
+<button id="myButton" onclick="popup()">
+Sign Up for the event
+</button>
+
+
+
+</section>
+<div id="myPopup" class="popup">
+  <div class="popup-content">
+      <h1 >
+        <label for="Email">Enter Email</label>
+        <br>
+          <input type="text" name="Email" id="Email">
+        
+      <button id="closePopup" onclick="closePopup()">
+            Close
+        </button>
+  </div>
+</div>
+<script src="script.js"></script>
+  </body>
+</html>
